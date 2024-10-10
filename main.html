@@ -1,0 +1,189 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width==, initial-scale=1.0">
+    <title>Bhavesh Bhat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa175f14ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="Header">
+    <div class="container">
+        <nav>
+           <img src="images/9E01C159-0F7D-4F58-9E28-9AA5B37CD3E9.jpg" class="logo">
+                <ul>
+                    <li><a href="">Home </a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>      
+                    <li><a href="">Portfolio </a></li>
+                    <li><a href="">Contact </a></li>
+
+                </ul>
+    <div class="header-text">
+        <p>Web Developer | Aspiring Software Engineer </p>
+        <h1>Hello, I'm <span> Bhavesh</span> <br> from Delhi.</h1>
+
+    </div>    
+        </nav>
+    </div>
+</div>
+<div id="about">
+      <div class="container">
+       
+        <div class="row">   
+
+            <div class="about-col-1">
+                <img src="/images/1*_VTopwBaGy54Fw-NPLMyfg.jpg">
+            </div>
+          
+          
+            <!---------ABOUT---------->
+          
+          <div class="about-col-2">
+                
+            <h1 class="sub-title">About me</h1>
+               
+                <p class="textparaforabout">
+                    As an aspiring software engineer, I have developed a solid foundation in programming languages like Java, C++, and CSS. 
+                    Currently a student, I am deeply committed to honing my skills and expanding my knowledge in the field of software development.
+                    With a passion for problem-solving and a keen interest in the latest industry trends,I am constantly pushing myself to grow and adapt, 
+                    preparing for a successful career in this dynamic and ever-evolving tech landscape.
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('education')" >Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Webpages</li>
+                        <li><span>Web Developer</span><br>Designing Websites</li>
+
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September,2023- August,2024</span><br>Techspace PR.Head,Ggsipu</li>
+                        <li><span>2024</span><br>Program Cordinator,Ggsipu</li>
+
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022- Current</span><br>B.Tech in Cse,Ggsipu</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+
+
+</div>
+
+              <!-------services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i> 
+                    <h2 class="d1">Web Design</h2>
+                    <P>Creating stunning,user-centric websites tailored for optimal performance and seamless experience.</P>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2 class="d2">Content Writing</h2>
+                    <P>Crafting compelling, SEO-optimized content that engages readers and elevates your brand's voice.</P>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2 class="d3">App Development</h2> 
+                    <P>Building intuitive, high-performance mobile apps designed for seamless user experience and scalability.</P>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+</div>
+<!-----------CONTACTS------------>
+<div id="contact">
+
+       <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>  bhaveshbhat2004@gmail.com</p>
+                <p> <i class="fa-solid fa-phone">  </i>9818451855</p> 
+                <div class="social-icons">
+                     <a href="www.linkedin.com/in/bhavesh-bhat-642932228"><i class="fa-brands fa-linkedin-in"></i></a>
+                     <a href="https://github.com/bhavesh0001"><i class="fa-brands fa-github"></i></a>
+                     <a href="https://x.com/bbhaveshh"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-rignt"></div>
+            <form>
+
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email "  required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn   btn2">Submit </button>
+
+
+
+            </form>
+
+        </div>
+
+       </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){ 
+        tablink.classList.remove("active-link");
+    }
+    
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link"); 
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+</script>
+
+</body>
+
+</html>
